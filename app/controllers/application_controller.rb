@@ -3,7 +3,36 @@ class ApplicationController < Sinatra::Base
   
   # Add your routes here
   get "/" do
-    { message: "Good luck with your project!" }.to_json
+    {message: "Welcome to fruit shop!" }.to_json
+  end
+
+  get '/fruits' do
+    Fruit.all.to_json
+  end
+
+  post '/fruits' do
+    fruit = Fruit.create(
+      name: params[:name],
+      price: params[:price],
+      stock: params[:stock],
+      health_benefit: params[:health_benefit],
+      owner_id: params[:owner_id]
+    ).to_json
+  end
+
+  patch '/fruits/:id' do
+    fruit = Fruit.find(params[:id])
+    fruit.update(
+      price: params[:price],
+      stock: params[:stock],
+      owner_id: params[:owner_id]
+    ).to_json
+  end
+
+  delete '/fruits/:id' do
+    fruit = Fruit.find(params[:id])
+    fruit.destroy
+    fruit.to_json
   end
 
 end
