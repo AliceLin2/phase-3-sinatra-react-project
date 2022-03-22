@@ -13,5 +13,4 @@ Fruit.create(name: "Banana", price: 1, stock: 100, health_benefit:"Excellent sou
 Fruit.create(name: "Blackberry", price: 7, stock: 75, health_benefit:"Packed with vitamin C, vitamin K and vitamin E. Great source of magnesium and manganese. Very good source of dietary fiber.", owner_id:tina.id)
 Fruit.create(name: "Blueberry", price: 9, stock: 80, health_benefit:"Rich in vitamin K and vitamin C. Outstanding source of manganese. High in antioxidants, particularly flavonoids.", owner_id:tina.id)
 
-
 puts "✅ Done seeding!"

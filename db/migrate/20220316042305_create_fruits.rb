@@ -5,6 +5,7 @@ class CreateFruits < ActiveRecord::Migration[6.1]
       t.integer :price
       t.integer :stock
       t.string :health_benefit
+      t.integer :owner_id
     end
   end
 end

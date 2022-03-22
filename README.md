@@ -1,3 +1,30 @@
+Overview
+
+    Fruit Shop APP is an APP where shop owners could find many different kinds of fruits they own and sell along with some information about any particular fruit (such as price, stock and health benefit). Owners could update the information regarding each fruit. They also could delete any fruit from their shops. The fruits and owners data are stored in the back end server writing using Ruby. 
+
+Usage
+       
+    1. fork and clone "https://github.com/AliceLin2/phase-3-sinatra-react-project", cd to that folder
+
+    2. run back end server through entering command in the terminal
+
+        bundle exec rake server
+
+    3. fork and clone "https://github.com/AliceLin2/sinatra-project-front-end", cd to that folder
+
+    4.  open another terminal and enter npm install then enter npm start
+
+    5. nagivate the website
+
+        1' See Home page first which return all the fruits owned by all the owners. 
+        2' Users can search the fruits by inputing fruit name.
+        3' By changing the filter, the shop of specific owner chose will be displayed together with the fruits that owner owned. 
+        4' Users can edit the fruit information by clicking update button
+        5' Also delete any fruit using the delete button
+      
+
+    For more information on navigating the APP, please check out this Youtube link. https://www.youtube.com/watch?v=YEXu0R7GrUs
+
 # Phase 3 Project Guidelines
 
 ## Learning Goals
