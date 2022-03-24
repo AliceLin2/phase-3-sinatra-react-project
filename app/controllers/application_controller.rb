@@ -10,7 +10,7 @@ class ApplicationController < Sinatra::Base
     Fruit.all.to_json
   end
 
-  get '/:owner_id/fruits' do
+  get '/owners/:owner_id/fruits' do
     owner = Owner.find(params[:owner_id])
     owner.fruits.to_json
   end
@@ -29,8 +29,7 @@ class ApplicationController < Sinatra::Base
     fruit = Fruit.find(params[:id])
     fruit.update(
       price: params[:price],
-      stock: params[:stock],
-      owner_id: params[:owner_id]
+      stock: params[:stock]
     ).to_json
   end
 
